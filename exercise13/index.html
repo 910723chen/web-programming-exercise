@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 13 - 陳融達 s1123580</title>
+  <style>
+    body { margin: 24px; color: black; background: white; font-family: "Times New Roman", serif; font-size: 20px; }
+    ul { padding-left: 24px; line-height: 1.6; }
+    .square { display: block; width: 100px; height: 100px; margin: 24px 0; padding: 0; border: 0; background: pink; color: black; font: inherit; text-align: left; transition: width 1s, height 1s; }
+    .square span { display: block; height: 100%; }
+    .long:hover, .long:focus { width: min(600px, 100%); }
+    .large:hover, .large:focus { width: 150px; height: 150px; }
+    .square:focus-visible { outline: 2px solid black; outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { .square { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <ul>
+      <li>Mouse hover square 1: the square becomes longer.</li>
+      <li>Mouse hover square 2: the square becomes larger.</li>
+    </ul>
+    <button class="square long" type="button" aria-label="Square 1: becomes longer"><span>1</span></button>
+    <button class="square large" type="button" aria-label="Square 2: becomes larger"><span>2</span></button>
+  </main>
+</body>
+</html>
